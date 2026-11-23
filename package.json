@@ -1,0 +1,35 @@
+{
+  "name": "webpack-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Modelo de landing page com Webpack 5, Babel e PostCSS, pronto para sites de clientes",
+  "scripts": {
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "author": "Leonardo Dias Caumo",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.29.13",
+    "@babel/preset-env": "^7.29.14",
+    "autoprefixer": "^10.7.0",
+    "babel-loader": "^10.1.1",
+    "css-loader": "^7.1.5",
+    "cssnano": "^9.9.0",
+    "html-webpack-plugin": "^5.6.8",
+    "mini-css-extract-plugin": "^2.10.2",
+    "postcss": "^8.5.33",
+    "postcss-loader": "^8.2.2",
+    "webpack": "^5.113.0",
+    "webpack-cli": "^7.3.1",
+    "webpack-dev-server": "^6.1.0"
+  },
+  "dependencies": {
+    "core-js": "^3.51.0"
+  }
+}
