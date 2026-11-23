@@ -1,0 +1,38 @@
+.navigation {
+  display: flex;
+  gap: 32px;
+}
+
+.navigation__link {
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navigation__link:hover {
+  color: var(--color-primary);
+}
+
+/* No celular, a navegação vira uma lista que abre embaixo do cabeçalho. */
+@media screen and (max-width: 768px) {
+  .navigation {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #e3e8f0;
+  }
+
+  .navigation_opened {
+    display: flex;
+  }
+
+  .navigation__link {
+    padding: 16px 24px;
+  }
+}

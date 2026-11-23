@@ -1,0 +1,19 @@
+/* Cores e fontes num lugar só: para um cliente novo, comece por aqui. */
+:root {
+  --color-primary: #1f6feb;
+  --color-primary-dark: #1859c4;
+  --color-whatsapp: #25a55f;
+  --color-text: #1b2230;
+  --color-text-muted: #5b6475;
+  --color-background-alt: #f4f7fb;
+  --font-main: 'Inter', Arial, sans-serif;
+}
+
+.page {
+  min-width: 320px;
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background-color: #fff;
+  scroll-behavior: smooth;
+}

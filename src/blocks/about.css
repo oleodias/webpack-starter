@@ -1,0 +1,14 @@
+.about {
+  scroll-margin-top: 72px;
+  max-width: 720px;
+  padding: 0 24px 80px;
+  margin: 0 auto;
+}
+
+.about__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  text-align: center;
+}

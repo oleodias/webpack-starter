@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sua Empresa: atendimento rápido e de confiança na sua região."
+    />
+    <title>Sua Empresa</title>
+    <!-- O <script> e o <link> do CSS NÃO vão aqui: o HtmlWebpackPlugin os
+         coloca no build, já com os nomes certos (com o hash). -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="<%= require('./images/logo.svg') %>"
+    />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__container">
+        <a class="header__logo" href="#inicio">
+          <img
+            class="header__logo-image"
+            src="<%= require('./images/logo.svg') %>"
+            alt=""
+            width="40"
+            height="40"
+          />
+          Sua Empresa
+        </a>
+        <button
+          class="header__menu-button"
+          type="button"
+          aria-label="Abrir o menu"
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          <img
+            src="<%= require('./images/icon-menu.svg') %>"
+            alt=""
+            width="24"
+            height="24"
+          />
+        </button>
+        <nav class="navigation" id="navigation">
+          <a class="navigation__link" href="#servicos">Serviços</a>
+          <a class="navigation__link" href="#sobre">Sobre</a>
+          <a class="navigation__link" href="#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">O serviço que a sua região precisa</h1>
+            <p class="hero__text">
+              Troque este texto pela frase que resume o negócio do cliente: o
+              que ele faz, para quem e por que escolher ele.
+            </p>
+            <a class="button" href="#contato">Fale com a gente</a>
+          </div>
+          <img
+            class="hero__image"
+            src="<%= require('./images/hero.svg') %>"
+            alt="Ilustração de uma página com um botão de contato"
+            width="480"
+            height="360"
+          />
+        </div>
+      </section>
+
+      <section class="services" id="servicos">
+        <h2 class="section-title">Serviços</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <img
+              class="services__icon"
+              src="<%= require('./images/icon-speed.svg') %>"
+              alt=""
+              width="48"
+              height="48"
+            />
+            <h3 class="services__title">Atendimento rápido</h3>
+            <p class="services__text">
+              Uma ou duas frases sobre o primeiro serviço do cliente.
+            </p>
+          </li>
+          <li class="services__item">
+            <img
+              class="services__icon"
+              src="<%= require('./images/icon-phone.svg') %>"
+              alt=""
+              width="48"
+              height="48"
+            />
+            <h3 class="services__title">Pedido pelo celular</h3>
+            <p class="services__text">
+              Uma ou duas frases sobre o segundo serviço do cliente.
+            </p>
+          </li>
+          <li class="services__item">
+            <img
+              class="services__icon"
+              src="<%= require('./images/icon-heart.svg') %>"
+              alt=""
+              width="48"
+              height="48"
+            />
+            <h3 class="services__title">Clientes satisfeitos</h3>
+            <p class="services__text">
+              Uma ou duas frases sobre o terceiro diferencial do cliente.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="about" id="sobre">
+        <h2 class="section-title">Sobre</h2>
+        <p class="about__text">
+          A história do negócio em poucas linhas: há quanto tempo existe, onde
+          fica e o que o torna diferente.
+        </p>
+      </section>
+
+      <section class="contact" id="contato">
+        <h2 class="contact__title">Vamos conversar?</h2>
+        <p class="contact__text">Atendimento de segunda a sábado, das 8h às 18h.</p>
+        <!-- Troque 5500000000000 pelo número do cliente: 55 + DDD + número,
+             só dígitos. O texto da mensagem vai codificado (%20 = espaço). -->
+        <a
+          class="button button_type_whatsapp"
+          href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Vim%20pelo%20site."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="button__icon"
+            src="<%= require('./images/icon-chat.svg') %>"
+            alt=""
+            width="24"
+            height="24"
+          />
+          Chamar no WhatsApp
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">
+        © <span class="footer__year"></span> Sua Empresa
+      </p>
+    </footer>
+  </body>
+</html>

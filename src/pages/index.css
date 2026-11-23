@@ -1,0 +1,14 @@
+/* Ponto de entrada do CSS: um @import por bloco (BEM Flat). No build, o
+   css-loader junta tudo e o PostCSS minifica num arquivo só. */
+@import url('../vendor/fonts.css');
+@import url('../vendor/normalize.css');
+@import url('../blocks/page.css');
+@import url('../blocks/button.css');
+@import url('../blocks/section-title.css');
+@import url('../blocks/header.css');
+@import url('../blocks/navigation.css');
+@import url('../blocks/hero.css');
+@import url('../blocks/services.css');
+@import url('../blocks/about.css');
+@import url('../blocks/contact.css');
+@import url('../blocks/footer.css');

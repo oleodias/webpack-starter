@@ -1,0 +1,22 @@
+/* Inter, servida pelo próprio site (sem depender do Google Fonts). O
+   css-loader troca os url() pelos caminhos do build, e o Webpack copia as
+   fontes para dist/fonts/. WOFF2 primeiro (menor); WOFF de reserva. */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url('./fonts/inter-latin-400-normal.woff2') format('woff2'),
+    url('./fonts/inter-latin-400-normal.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    url('./fonts/inter-latin-700-normal.woff2') format('woff2'),
+    url('./fonts/inter-latin-700-normal.woff') format('woff');
+}
